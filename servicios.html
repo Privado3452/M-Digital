@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ejercicios Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- Content menu -->
+
+    <nav class="navbar  navbar-expand-lg bg-dark" data-bs-theme="dark">
+
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="index.html">M-Digitales</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="municipios.html">Municipios</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Cuenta
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="panel Ad/index.html">Iniciar sesion</a></li>
+                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal2">Registrarse</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Ayuda.html">Ayuda</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-disabled="true" href="contactos.html">Contactos</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar Aqui" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Content menu -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesion</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Formulario de iniciar sesion -->
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+
+
+            </form>
+            <!-- Formulario de iniciar sesion -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Ingresar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Fin Modal -->
+    <!-- Modal registro -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Registrarse</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3 ">
+                <label for="disabledSelect" class="form-label">Tipo de Documento</label>
+                <select id="disabledSelect" class="form-select">
+                  <option>Cedula de Ciudadania</option>
+                  <option>Tarjeta de Identidad</option>
+                  <option>Permiso Especial de Permanencia</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Numero de Documento</label>
+                <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Nombres</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Apellidos</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Email</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Celular</label>
+                <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+
+
+            </form>
+            <!-- Formulario fin de registro -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Registrarse</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Fin registro -->
+
+    <h1 class="display-3 text-center py-4"><strong>Servicios</strong></h1>
+    <!-- content  categorias -->
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card" style="width: 30rem;">
+          <img src="img/AA.jpg" class="card-img-top" style="width: 30rem;" height="305rem" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title text-center ">Gimnasio AA</h5>
+            <h5 class="card-title text-center ">Garzon-Huila</h5>
+            <a class="icon-link icon-link-hover" href="https://g.co/kgs/ERDBBAk">
+              <h5 class="card-title text-center ">Cl. 8 #12-35, Garzón, Huila</h5>
+
+              <svg class="bi" aria-hidden="true">
+                <use xlink:href="#arrow-right"></use>
+              </svg>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 30rem;">
+          <img src="img/ambeyma.jpg" class="card-img-top" style="width: 30rem;" height="305rem" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title text-center">Ambeyma</h5>
+            <h5 class="card-title text-center ">Garzon-Huila</h5>
+            <a class="icon-link icon-link-hover" href="https://maps.app.goo.gl/dZrDyGBSA1Zw7Wp48">
+              <h5 class="card-title text-center ">Cra. 10 #12-12, Garzón, Huila</h5>
+
+              <svg class="bi" aria-hidden="true">
+                <use xlink:href="#arrow-right"></use>
+              </svg>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 30rem;">
+          <img src="img/parque 1 .jpg" class="card-img-top" style="width: 30rem;" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title text-center">Parque Simon Bolivar</h5>
+            <h5 class="card-title text-center ">Garzon-Huila</h5>
+            <a class="icon-link icon-link-hover" href="https://maps.app.goo.gl/djxz7FD9W43YqotS9">
+              <h5 class="card-title text-center ">a 5-91, Cra. 9 #5-1, Garzón, Huila</h5>
+
+              <svg class="bi" aria-hidden="true">
+                <use xlink:href="#arrow-right"></use>
+              </svg>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 30rem;">
+          <img src="img/paRQUE 2 .jpeg" class="card-img-top" style="width: 30rem;" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title text-center">Parque Nasaret</h5>
+            <h5 class="card-title text-center ">Garzon-Huila</h5>
+            <a class="icon-link icon-link-hover " href="https://maps.app.goo.gl/YCknGXqhRHudhrRE8">
+              <h5 class="card-title text-center ">a 5-92, Cra. 1d #52, Garzón, Huila</h5>
+              <svg class="bi" aria-hidden="true">
+                <use xlink:href="#arrow-right"></use>
+              </svg>
+            </a>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+
+
+    <!-- content footer -->
+    <footer class=" text-bg-dark text-center py-4">
+
+      <p>Diseñado por Analisis y Desarrollo de software Ficha No. 2670687</p>
+      <p>@ 2024 Tienda JS</p>
+
+    </footer>
+    <!-- content  fin footer -->
+
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
